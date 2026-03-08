@@ -9,7 +9,7 @@ import { eventsData } from "../../data/eventsData"
 
 export default function EventDetailPage() {
   const params = useParams()
-  const event = eventsData[params.eventId as string]
+  const event = eventsData[params.eventId as keyof typeof eventsData]
 
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
