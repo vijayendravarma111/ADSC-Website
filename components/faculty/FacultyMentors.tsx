@@ -4,7 +4,7 @@ import Image from "next/image";
 const mentors = [
   {
     name: "Dr. Shiva Prasad Satla",
-    role: "Faculty Advisor",
+    role: "Data Science Hod",
     image: "/faculty/facultyyy1.jpg",
   }
 ];

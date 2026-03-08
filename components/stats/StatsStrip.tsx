@@ -1,8 +1,8 @@
 const stats = [
   { label: "Active Members", value: "250+" },
-  { label: "Flagship Projects", value: "15+" },
+  { label: "Startups", value: "5+" },
   { label: "Events Conducted", value: "20+" },
-  { label: "Placements & Internships", value: "60+" },
+  { label: "Placements", value: "160+" },
 ];
 
 export default function StatsStrip() {
