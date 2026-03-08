@@ -259,13 +259,13 @@ image:"/tutors/eshwar.png"
 name:"Ashwin Kumar",
 domain:"Data Science",
 exp:"Data Science and AI instructor in Teks Academy",
-image:"/tutors/ashwin kumar.png"
+image:"/tutors/ashwin-kumar.png"
 },
 {
 name:"Sai Krishna Singupuram",
 domain:"Cybersecurity",
 exp:"Principal Cybersecurity Consultant & Cybersecurity Expert",
-image:"/tutors/eshwar.png"
+image:"/tutors/cyber.png"
 },
 {
 name:"Koteswar Rao S",

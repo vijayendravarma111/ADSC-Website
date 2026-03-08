@@ -37,8 +37,8 @@ export default function Navbar() {
           </span>
         </div>
 
-<div className="hidden lg:flex gap-6 text-sm text-gray-300">
-            
+<div className="flex gap-6 text-sm text-gray-300">
+              
           <button
             onClick={() => goToSection('about')}
             className="cursor-pointer hover:text-white transition"
