@@ -271,7 +271,7 @@ image:"/tutors/cyber.png"
 name:"Koteswar Rao S",
 domain:"UI/UX Design",
 exp:"20+ years in Web, Software & Graphic Design",
-image:"/tutors/koteshwar.jpeg"
+image:"/tutors/koteshwar.png"
 }
 ].map((trainer,index)=>(
 
