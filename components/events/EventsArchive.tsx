@@ -10,31 +10,37 @@ const events = [
     id: 'praesto-2k24',
     title: 'Praesto 2k24',
     subtitle: 'Flagship Technical Fest & Hackathon',
+    image: '/thumbnails/preastoo.png',
   },
   {
     id: 'vishesh-2k24',
     title: 'Vishesh 2k24',
     subtitle: 'Inter-College Project Expo',
+    image: '/thumbnails/vishesh.jpeg',
   },
   {
     id: 'generative-ai-seminar',
     title: 'Generative AI Seminar',
     subtitle: 'Exploring AI Tools & Creativity',
+    image: '/thumbnails/gen-ai.JPG',
   },
   {
     id: 'stratum24',
     title: 'Stratum24 Hackathon',
     subtitle: '24-Hour National-Level Hackathon',
+    image: '/thumbnails/stratum.JPG',
   },
   {
     id: 'idea-forge',
     title: 'IdeaForge',
     subtitle: 'Innovation & Startup Ideation Platform',
+    image: '/thumbnails/idea.jpeg',
   },
   {
     id: 'upswing',
     title: 'Upswing Program',
     subtitle: 'Continuous Learning & Career Growth',
+    image: '/thumbnails/upswing.jpeg',
   },
 ]
 
@@ -44,6 +50,7 @@ export default function EventsArchive() {
 
   const openEvent = (id: string) => {
     setLoading(true)
+
     setTimeout(() => {
       router.push(`/events/${id}`)
       setLoading(false)
@@ -62,11 +69,8 @@ export default function EventsArchive() {
               Archive
             </span>
           </h2>
-
-
         </div>
 
-        {/* SLIDER WITH ARROWS */}
         <HorizontalSlider>
           {events.map((event) => (
             <div
@@ -87,11 +91,14 @@ export default function EventsArchive() {
                 transition-all duration-300
               "
             >
-              {/* Poster Placeholder */}
-              <div className="h-[200px] rounded-xl mb-4 bg-gradient-to-br from-[#ff3131]/20 to-[#ff914d]/20 flex items-center justify-center">
-                <span className="text-white/40 text-sm">
-                  Event Poster
-                </span>
+
+              {/* EVENT IMAGE */}
+              <div className="h-[200px] rounded-xl mb-4 overflow-hidden">
+                <img
+                  src={event.image}
+                  alt={event.title}
+                  className="w-full h-full object-cover rounded-xl"
+                />
               </div>
 
               <h3 className="text-lg font-semibold text-white">
@@ -101,6 +108,7 @@ export default function EventsArchive() {
               <p className="text-sm text-gray-400 mt-1">
                 {event.subtitle}
               </p>
+
             </div>
           ))}
         </HorizontalSlider>

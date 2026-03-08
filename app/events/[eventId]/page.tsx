@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { motion } from "framer-motion"
 import { FiX } from "react-icons/fi"
 import Link from "next/link"
@@ -18,15 +18,24 @@ export default function EventDetailPage() {
   return (
     <div className="relative min-h-screen bg-[#050505] text-white overflow-hidden">
 
-      {/* PARTICLE BACKGROUND */}
+      {/* FLOATING BACK BUTTON */}
+      <Link
+        href="/#events"
+        className="fixed top-24 left-6 z-50 text-sm px-4 py-2 rounded-full bg-black/60 backdrop-blur border border-white/10 text-gray-300 hover:text-[#ff3131] hover:border-[#ff3131]/40 transition"
+      >
+        ← Back to Events
+      </Link>
+
+      {/* PARTICLES */}
       <Particles />
 
-      {/* FLOATING GLOW BACKGROUNDS */}
+      {/* BACKGROUND GLOW */}
       <motion.div
         animate={{ y: [0, -40, 0] }}
         transition={{ repeat: Infinity, duration: 8 }}
         className="absolute -top-60 -left-60 w-[600px] h-[600px] bg-[#ff3131]/20 rounded-full blur-[180px]"
       />
+
       <motion.div
         animate={{ y: [0, 40, 0] }}
         transition={{ repeat: Infinity, duration: 10 }}
@@ -37,18 +46,11 @@ export default function EventDetailPage() {
       <section className="relative py-32 px-6 border-b border-white/10">
         <div className="max-w-6xl mx-auto">
 
-          <Link
-            href="/#events"
-            className="text-sm text-gray-400 hover:text-[#ff3131]"
-          >
-            ← Back to Events
-          </Link>
-
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-6xl md:text-7xl font-extrabold mt-8"
+            className="text-6xl md:text-7xl font-extrabold"
           >
             {event.title}
           </motion.h1>
@@ -60,6 +62,7 @@ export default function EventDetailPage() {
           <p className="mt-10 max-w-4xl text-lg leading-relaxed text-gray-300">
             {event.overview}
           </p>
+
         </div>
       </section>
 
@@ -119,6 +122,7 @@ export default function EventDetailPage() {
               </div>
             ))}
           </div>
+
         </motion.section>
 
       </div>
@@ -132,6 +136,7 @@ export default function EventDetailPage() {
           >
             <FiX />
           </button>
+
           <img
             src={selectedImage}
             className="max-h-[80vh] max-w-[90vw] rounded-2xl"
@@ -142,6 +147,7 @@ export default function EventDetailPage() {
     </div>
   )
 }
+
 function Particles() {
   return (
     <div className="absolute inset-0 -z-10">
