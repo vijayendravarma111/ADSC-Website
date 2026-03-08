@@ -1,4 +1,5 @@
 export const eventsData = {
+
   "vishesh-2k24": {
     title: "Vishesh 2k24",
     date: "September 27–28, 2024",
@@ -48,6 +49,7 @@ export const eventsData = {
     ],
   },
 
+
   "praesto-2k24": {
     title: "Praesto 2k24",
     date: "June 24–26, 2024",
@@ -90,16 +92,17 @@ export const eventsData = {
 
     images: [
       "/events_pics/praesto/img1.jpeg",
-      "/events_pics/praesto/img2.jpg",
-      "/events_pics/praesto/img3.jpg",
-      "/events_pics/praesto/img4.jpg",
-      "/events_pics/praesto/img5.jpg",
+      "/events_pics/praesto/img2.JPG",
+      "/events_pics/praesto/img3.JPG",
+      "/events_pics/praesto/img4.JPG",
+      "/events_pics/praesto/img5.JPG",
       "/events_pics/praesto/img6.jpg",
       "/events_pics/praesto/img7.jpg",
-      "/events_pics/praesto/img8.jpg",
-      "/events_pics/praesto/img9.jpg",
+      "/events_pics/praesto/img8.JPG",
+      "/events_pics/praesto/img9.JPG",
     ],
   },
+
 
   "generative-ai-seminar": {
     title: "Generative AI Seminar",
@@ -130,15 +133,18 @@ export const eventsData = {
     ],
 
     images: [
+      "/events_pics/gen-ai/IMG_2406.JPG",
+      "/events_pics/gen-ai/IMG_2409.JPG",
+      "/events_pics/gen-ai/IMG_2825.JPG",
       "/events_pics/gen-ai/img1.jpeg",
       "/events_pics/gen-ai/img2.jpeg",
-      "/events_pics/gen-ai/img3.jpg",
-      "/events_pics/gen-ai/img4.jpg",
+      "/events_pics/gen-ai/img3.JPG",
+      "/events_pics/gen-ai/img4.JPG",
       "/events_pics/gen-ai/img5.jpeg",
-      "/events_pics/gen-ai/img6.jpg",
-
+      "/events_pics/gen-ai/img6.JPG",
     ],
   },
+
 
   "stratum24": {
     title: "Stratum24 Hackathon",
@@ -170,17 +176,21 @@ export const eventsData = {
     ],
 
     images: [
-      "/events_pics/startum/img1.jpg",
+      "/events_pics/startum/20241201_051720.jpg",
+      "/events_pics/startum/IMG_0173.JPG",
+      "/events_pics/startum/IMG_8935.JPG",
+      "/events_pics/startum/img1.JPG",
       "/events_pics/startum/img2.jpeg",
-      "/events_pics/startum/img3.jpg",
+      "/events_pics/startum/img3.JPG",
       "/events_pics/startum/img4.jpeg",
       "/events_pics/startum/img5.jpeg",
       "/events_pics/startum/img6.jpeg",
-      "/events_pics/startum/img7.jpg",
-      "/events_pics/startum/img8.jpg",
-      "/events_pics/startum/img9.jpg",
+      "/events_pics/startum/img7.JPG",
+      "/events_pics/startum/img8.JPG",
+      "/events_pics/startum/img9.JPG",
     ],
   },
+
 
   "idea-forge": {
     title: "IdeaForge",
@@ -211,9 +221,17 @@ export const eventsData = {
 
     images: [
       "/events_pics/ideaforge/img1.jpeg",
- 
+      "/events_pics/ideaforge/img2.jpeg",
+      "/events_pics/ideaforge/img3.jpeg",
+      "/events_pics/ideaforge/img4.jpeg",
+      "/events_pics/ideaforge/img5.jpeg",
+      "/events_pics/ideaforge/img6.jpeg",
+      "/events_pics/ideaforge/img7.jpeg",
+      "/events_pics/ideaforge/img8.jpeg",
+      "/events_pics/ideaforge/img9.jpeg",
     ],
   },
+
 
   "upswing": {
     title: "Upswing Program",
@@ -254,4 +272,5 @@ export const eventsData = {
       "/events_pics/upswing/img9.png",
     ],
   },
-}
+
+};
