@@ -221,14 +221,7 @@ export const eventsData = {
 
     images: [
       "/events_pics/ideaforge/img1.jpeg",
-      "/events_pics/ideaforge/img2.jpeg",
-      "/events_pics/ideaforge/img3.jpeg",
-      "/events_pics/ideaforge/img4.jpeg",
-      "/events_pics/ideaforge/img5.jpeg",
-      "/events_pics/ideaforge/img6.jpeg",
-      "/events_pics/ideaforge/img7.jpeg",
-      "/events_pics/ideaforge/img8.jpeg",
-      "/events_pics/ideaforge/img9.jpeg",
+
     ],
   },
 
